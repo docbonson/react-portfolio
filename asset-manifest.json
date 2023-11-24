@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9cf6c03b.css",
+    "main.js": "/react-portfolio/static/js/main.127d066c.js",
+    "static/media/geometry.mp4": "/react-portfolio/static/media/geometry.32f4ba4a35b6bb769203.mp4",
+    "static/media/fallback-image.png": "/react-portfolio/static/media/fallback-image.d7075bb6fc934f311561.png",
+    "static/media/dave-avatar.png": "/react-portfolio/static/media/dave-avatar.45e5bf0d9bafbb675228.png",
+    "static/media/project-1.png": "/react-portfolio/static/media/project-1.4627f8019adef630c2cc.png",
+    "static/media/dave-bonson-resume.pdf": "/react-portfolio/static/media/dave-bonson-resume.0cde25be224a1b8b0a0d.pdf",
+    "static/media/typewriter-icon.png": "/react-portfolio/static/media/typewriter-icon.c9af4f3bbc4dc89c0c70.png",
+    "static/media/skills-icon.png": "/react-portfolio/static/media/skills-icon.64078bc0e3b9025a23c7.png",
+    "static/media/asterisk-icon.png": "/react-portfolio/static/media/asterisk-icon.785fbe227ba8ff89fa5c.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.9cf6c03b.css.map": "/react-portfolio/static/css/main.9cf6c03b.css.map",
+    "main.127d066c.js.map": "/react-portfolio/static/js/main.127d066c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cf6c03b.css",
+    "static/js/main.127d066c.js"
+  ]
+}
