@@ -5,6 +5,7 @@ import subheadingsData from './subheadingsData'
 import personalIcon from '../assets/moebius-triangle.png'
 import educationIcon from '../assets/upgrade.png'
 import careerIcon from '../assets/triple-corn.png'
+import resumeFile from '../assets/dave-bonson-resume.pdf'
 
 const AboutMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(1)
@@ -17,6 +18,13 @@ const AboutMenu = () => {
 
   const handleSubheadingClick = (subheading) => {
     setActiveSubheading(subheading)
+  }
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a')
+    link.href = resumeFile
+    link.download = 'dave-bonson-resume.pdf'
+    link.click()
   }
 
   const menuItems = ['PERSONAL', 'EDUCATION', 'CAREER']
@@ -46,6 +54,11 @@ const AboutMenu = () => {
         <div className="icon-title-container">
           <img src={activeMenuIcon} alt={activeMenuTitle} className="icon" />
           <h3>{activeMenuTitle}</h3>
+          {activeMenuTitle === 'CAREER' && (
+            <button className="button" onClick={handleDownloadResume}>
+              Download Resume
+            </button>
+          )}
         </div>
         {subHeadings.map((subheading, index) => (
           <AboutSubheading

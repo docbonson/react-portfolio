@@ -5,11 +5,11 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Dedicated front-end developer with over five years of hands-on
-            experience in React and JavaScript. Transitioning from a vibrant
-            career in music and talent management, I bring a unique blend of
-            creativity and technical prowess to software development. Focused on
-            good design principles and meticulous attention to detail, I have
+            Dedicated front-end developer with four years of hands-on experience
+            in React and JavaScript. Transitioning from a vibrant career in
+            music and talent management, I bring a unique blend of creativity
+            and technical prowess to software development. Focused on good
+            design principles and meticulous attention to detail, I have
             successfully rebuilt websites and streamlined operational processes.
             Proficient in modern libraries like Tailwind and Typescript, I
             specialize in crafting intuitive and visually appealing user

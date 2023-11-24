@@ -17,7 +17,7 @@
 }
 
 .title {
-  font: 1rem;
+  font-size: 1rem;
   padding-right: 2.5rem;
 }
 
@@ -102,6 +102,17 @@
   position: relative;
   margin: 0.2rem 0;
   padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.button {
+  background-color: var(--purple);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 
 @media (max-width: 1440px) {
