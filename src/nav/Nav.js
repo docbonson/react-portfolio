@@ -1,42 +1,53 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import litIcon from '../assets/lit-icon.png'
-import skillsIcon from '../assets/skills-icon.png'
+import litIcon from '../assets/astronaut-helmet.png'
+import skillsIcon from '../assets/dead-eye.png'
 import stack from '../assets/stack.png'
 import envelope from '../assets/envelope.png'
 import '../styles/nav.css'
 
-export default function Nav() {
+const navigationData = [
+  {
+    to: '/',
+    icon: litIcon,
+    altText: 'lit icon',
+    className: 'nav-about',
+    title: 'ABOUT',
+  },
+  {
+    to: '/skills',
+    icon: skillsIcon,
+    altText: 'skills icon',
+    className: 'nav-skills',
+    title: 'SKILLS',
+  },
+  {
+    to: '/projects',
+    icon: stack,
+    altText: 'stack icon',
+    className: 'nav-projects',
+    title: 'PROJECTS',
+  },
+  {
+    to: '/contact',
+    icon: envelope,
+    altText: 'envelope icon',
+    className: 'nav-contact',
+    title: 'CONTACT',
+  },
+]
+
+const Nav = () => {
   const location = useLocation()
 
   const getNavPositionClass = () => {
-    switch (location.pathname) {
-      case '/':
-        return 'nav-about'
-      case '/skills':
-        return 'nav-skills'
-      case '/projects':
-        return 'nav-projects'
-      case '/contact':
-        return 'nav-contact'
-      default:
-        return ''
-    }
+    const found = navigationData.find((item) => item.to === location.pathname)
+    return found ? found.className : ''
   }
 
   const getPageTitle = () => {
-    switch (location.pathname) {
-      case '/':
-        return 'ABOUT'
-      case '/skills':
-        return 'SKILLS'
-      case '/projects':
-        return 'PROJECTS'
-      case '/contact':
-        return 'CONTACT'
-      default:
-        return ''
-    }
+    const found = navigationData.find((item) => item.to === location.pathname)
+    return found ? found.title : ''
   }
 
   const navPositionClass = getNavPositionClass()
@@ -46,13 +57,13 @@ export default function Nav() {
     return navClass === navPositionClass
   }
 
-  const renderNavLink = (to, imgSrc, altText, navClass) => {
-    const isCurrent = isCurrentPage(navClass)
+  const renderNavLink = (item) => {
+    const isCurrent = isCurrentPage(item.className)
     const linkClass = isCurrent ? 'nav-link current' : 'nav-link'
 
     return (
-      <Link to={to} className={linkClass}>
-        <img src={imgSrc} alt={altText} />
+      <Link to={item.to} className={linkClass}>
+        <img src={item.icon} alt={item.altText} />
         {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
       </Link>
     )
@@ -60,10 +71,9 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${navPositionClass}`}>
-      {renderNavLink('/', litIcon, 'lit icon', 'nav-about')}
-      {renderNavLink('/skills', skillsIcon, 'skills icon', 'nav-skills')}
-      {renderNavLink('/projects', stack, 'stack icon', 'nav-projects')}
-      {renderNavLink('/contact', envelope, 'envelope icon', 'nav-contact')}
+      {navigationData.map((item) => renderNavLink(item))}
     </nav>
   )
 }
+
+export default Nav
