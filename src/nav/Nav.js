@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import astronautHelmet from '../assets/astronaut-helmet.png'
-import deadEye from '../assets/dead-eye.png'
+import litIcon from '../assets/lit-icon.png'
+import skillsIcon from '../assets/skills-icon.png'
 import stack from '../assets/stack.png'
 import envelope from '../assets/envelope.png'
 import '../styles/nav.css'
@@ -60,15 +60,10 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${navPositionClass}`}>
-      {renderNavLink(
-        '/',
-        astronautHelmet,
-        'astronaut helmet icon',
-        'nav-about',
-      )}
-      {renderNavLink('/skills', deadEye, 'deadEye icon', 'nav-skills')}
+      {renderNavLink('/', litIcon, 'lit icon', 'nav-about')}
+      {renderNavLink('/skills', skillsIcon, 'skills icon', 'nav-skills')}
       {renderNavLink('/projects', stack, 'stack icon', 'nav-projects')}
-      {renderNavLink('contact', envelope, 'envelope icon', 'nav-contact')}
+      {renderNavLink('/contact', envelope, 'envelope icon', 'nav-contact')}
     </nav>
   )
 }

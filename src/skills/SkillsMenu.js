@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import classNames from 'classnames'
 import '../styles/skillsMenu.css'
 import skills from './skillsData'
-import frontendIcon from '../assets/eagle-emblem.png'
-import backendIcon from '../assets/hawk-emblem.png'
+import frontendIcon from '../assets/typewriter-icon.png'
+import backendIcon from '../assets/asterisk-icon.png'
 
 const SkillsMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(1)

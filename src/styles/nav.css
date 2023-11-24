@@ -32,6 +32,14 @@ a {
   gap: 0.625rem;
 }
 
+.nav-about img,
+.nav-skills img,
+.nav-projects img,
+.nav-contact img {
+  width: 3.125rem;
+  filter: brightness(0) invert(1);
+}
+
 .page-title {
   font-size: 0.875rem;
   color: white;
