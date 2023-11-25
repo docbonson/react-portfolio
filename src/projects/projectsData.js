@@ -1,22 +1,28 @@
-import projectOne from '../assets/project-1.png'
+import projectPlaceholder from '../assets/project-1.png'
+import weatherApp from '../assets/weather.png'
 
 const projectsData = [
   {
     id: 1,
     title: 'Weather App',
-    image: projectOne,
+    image: weatherApp,
     description: (
       <>
-        <p>This is just a placeholder for right now. I will fix this later.</p>
+        <p>
+          This is a basic weather app build using React. It has a dynamic
+          background depending on temperature and users can switch between
+          Fahrenheit and Celsius. I am planning on adding more functionality to
+          this. Including weather tracking radar.
+        </p>
       </>
     ),
-    github: 'https://github.com',
-    demo: 'https://netlify.com',
+    github: 'https://github.com/docbonson/weather-app',
+    demo: 'https://skizz-weather-app.netlify.app/',
   },
   {
     id: 2,
     title: 'Testing',
-    image: projectOne,
+    image: projectPlaceholder,
     description: (
       <>
         <p>Nothing to see here. Please move along</p>
