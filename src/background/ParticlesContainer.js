@@ -48,10 +48,10 @@ function ParticlesContainer() {
         },
         particles: {
           color: {
-            value: ['#00FFFF', '#800080'],
+            value: ['#800080'],
           },
           links: {
-            color: ['#00FFFF', '#800080'],
+            color: ['#00FFFF'],
             distance: 150,
             enable: true,
             opacity: 0.5,
