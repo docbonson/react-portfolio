@@ -65,6 +65,7 @@ a {
   .nav-contact {
     transform: translateX(0);
   }
+
   .nav {
     top: calc(100vh - 8rem);
     transform: translateX(-50%);
@@ -73,7 +74,7 @@ a {
     width: 2rem;
   }
   .nav-link img {
-    width: 2rem;
+    width: 3rem;
   }
   .page-title {
     display: none;
