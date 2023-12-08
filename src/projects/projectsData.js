@@ -1,4 +1,4 @@
-import projectPlaceholder from '../assets/project-1.png'
+import fireApp from '../assets/fire-image.png'
 import weatherApp from '../assets/weather.png'
 
 const projectsData = [
@@ -21,15 +21,15 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'Testing',
-    image: projectPlaceholder,
+    title: 'Wild Fire Tracker',
+    image: fireApp,
     description: (
       <>
-        <p>Nothing to see here. Please move along</p>
+        <p>Uses React.Js, Nasa API and Google Map API to track wild fires.</p>
       </>
     ),
-    github: 'https://github.com',
-    demo: 'https://netlify.com',
+    github: 'https://github.com/docbonson/fire-tracker',
+    demo: 'https://bonson-fire-tracker.netlify.app/',
   },
   // Add more projects if needed
 ]
